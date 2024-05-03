@@ -1,0 +1,99 @@
+/*Font*/
+@font-face {
+    font-family: 'HTWA'; 
+    src: url('https://cdn.glitch.global/7803081b-829b-4643-b401-e04791534f1b/healthewebA?v=1707491560317') format('opentype');
+    /* Remplacez 'chemin/vers/votre/police.otf' par le chemin réel vers votre fichier OTF */
+  }
+  @font-face {
+    font-family: 'HTWB'; 
+    src: url('https://cdn.glitch.global/7803081b-829b-4643-b401-e04791534f1b/HealTheWebB-Regular.otf?v=1707491560931') format('opentype');
+    /* Remplacez 'chemin/vers/votre/police.otf' par le chemin réel vers votre fichier OTF */
+  }
+  @font-face {
+    font-family: 'Hiriganow1'; 
+    src: url('https://cdn.glitch.global/7803081b-829b-4643-b401-e04791534f1b/%E3%83%92%E3%83%A9%E3%82%AD%E3%82%99%E3%83%8E%E8%A7%92%E3%82%B3%E3%82%99%E3%82%B7%E3%83%83%E3%82%AF%20W1.ttc?v=170757855047917') format('opentype');
+  }
+  @font-face {
+     font-family: 'Hiriganow4';
+    src: url('https://cdn.glitch.global/7803081b-829b-4643-b401-e04791534f1b/%E3%83%92%E3%83%A9%E3%82%AD%E3%82%99%E3%83%8E%E8%A7%92%E3%82%B3%E3%82%99%E3%82%B7%E3%83%83%E3%82%AF%20W4.ttc?v=1707578561769') format('opentype');
+  }
+   
+  body {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+  }
+  
+  #instruction {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Ajustez le rayon selon vos préférences */
+    width: 110px;
+    position: absolute;
+    bottom: 330px;
+    right: 10px;
+    font-family: 'Hiriganow1', sans-serif; 
+    text-align:center;
+  }
+  
+  /*mise en formed de l'interface*/
+  #formContainer {
+    margin: 15px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Ajustez le rayon selon vos préférences */
+    width: 110px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-family: 'HTWA', sans-serif; 
+    text-align:center;
+  }
+  
+  #formContainer label,
+  #formContainer input{
+      margin: 10px 0;
+  }
+  
+  #formContainer button {
+    margin: 5px 0;
+    
+  }
+  
+  #formContainer input,
+  #formContainer button {
+    width: 100px;
+    font-family: 'Hiriganow1', sans-serif; 
+  
+  }
+  
+  /*message lorsque qu'on stop la génération*/
+  #message {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 24px;
+      color:white;
+      background-color: black;
+      padding: 10px;
+      border: 1px solid black;
+      border-radius: 5px;
+      display: none;  /* Cache le message par défaut*/
+      font-family: 'Hiriganow1', sans-serif; 
+  
+  }
+  
+  /* Cacher les flèches pour les inputs  */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  input[type="number"] {
+    -moz-appearance: textfield; /* Firefox */
+  }
+  
+  
